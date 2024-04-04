@@ -1,6 +1,9 @@
 {
   "name": "cloudflare-d1-sdk",
   "version": "0.0.1",
+  "author": {
+    "name": "Nathan Beddoe"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/NathanBeddoeWebDev/cloudflare-d1-sdk"
