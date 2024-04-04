@@ -1,0 +1,1 @@
+export { default as D1Client } from './src/client'; 
