@@ -61,7 +61,13 @@ interface QueryResponse {
     success: boolean;
 }
 
-export default function D1Client(options: D1ClientOptions) {
+type D1ClientType = {
+    createDatabase: (databaseName: string) => Promise<DatabaseCreationResponse>;
+    listDatabases: (params?: { name?: string; page?: number; per_page?: number }) => Promise<DatabaseListResponse>;
+    queryDatabase: (sql: string, params?: string[], databaseId?: string) => Promise<QueryResponse>;
+}
+
+export default function D1Client(options: D1ClientOptions): D1ClientType {
     const { accountId, apiKey, apiEmail, bearerToken } = options;
     const headers: HeadersInit = {
         'Content-Type': 'application/json'
@@ -157,7 +163,6 @@ export default function D1Client(options: D1ClientOptions) {
             });
 
             const data: QueryResponse = await response.json();
-            console.log(data.result[0] ?? "No Results")
             return data;
         } catch (error) {
             console.error('Error querying D1 database:', error);
