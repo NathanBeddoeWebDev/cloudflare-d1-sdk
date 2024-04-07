@@ -1,5 +1,5 @@
 {
-  "name": "cloudflare-d1-sdk",
+  "name": "d1-sdk",
   "version": "0.0.2",
   "author": {
     "name": "Nathan Beddoe"

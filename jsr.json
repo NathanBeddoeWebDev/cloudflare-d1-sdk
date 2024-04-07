@@ -1,5 +1,5 @@
 {
-    "name": "@nathanbeddoewebdev/cloudflare-d1-sdk",
+    "name": "@nathanbeddoewebdev/d1-sdk",
     "version": "0.0.2",
     "exports": "./index.ts"
   }
