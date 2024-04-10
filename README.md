@@ -1,13 +1,13 @@
-# Cloudflare D1 Client
+# Cloudflare D1 SDK
 
 This is a TypeScript/JavaScript client for interacting with the Cloudflare D1 HTTP API. It provides a simple and intuitive way to create databases, list databases, and execute SQL queries on your D1 databases.
 
 ## Installation
 
-You can install this package using npm:
+You can install this package using your favourite package manager:
 
 ```bash
-bun install cloudflare-d1-client
+bun install d1-sdk
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ bun install cloudflare-d1-client
 First, import the `D1Client` function from the package:
 
 ```typescript
-import D1Client from 'cloudflare-d1-client';
+import D1Client from 'd1-sdk';
 ```
 
 Then, create a new client instance by calling the `D1Client` function with your authentication options:
