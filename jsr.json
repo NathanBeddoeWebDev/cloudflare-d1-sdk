@@ -1,5 +1,5 @@
 {
     "name": "@nathanbeddoewebdev/d1-sdk",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "exports": "./index.ts"
   }
